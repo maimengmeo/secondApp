@@ -15,4 +15,8 @@ export class ContentComponent {
     this.city = ""
   }
 
+  backCampus() {
+    return this.city.toLowerCase() === 'brampton' ? 'red' : 'blue';
+  }
+
 }

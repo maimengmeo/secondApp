@@ -14,7 +14,10 @@
     </div>
     <div class="inputArea common">
       <h3>2-way Binding</h3>
-        <p>City: {{city}}</p>
+        
+        <p ></p>
+
+        <p [ngStyle] = "{color: 'red'}">City: {{city}}</p>
 
         <label for="">
             <input [(ngModel)] = "city" autofocus> 
@@ -26,7 +29,7 @@
         <!-- is city is empty, disable the button -->
         <hr>
 
-        <p *ngIf="(city) === 'Brampton' || (city) === 'Oakville'; else noCampus ">
+        <p *ngIf="(city|lowercase) === 'brampton' || (city|lowercase) === 'oakville'; else noCampus " [ngStyle] = "{backgroundColor: backCampus()}">
             This city has a Sheridan campus
         </p>
 
