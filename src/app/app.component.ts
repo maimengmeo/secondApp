@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Student} from './myClasses/student';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'secondApp';
+
+  bio: Student = {
+    sid: 991545166,
+    sname: 'Mai',
+    scampus: 'Trafalgar',
+    slogin: 'phamtuye'
+  }
 }

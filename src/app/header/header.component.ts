@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {Student} from '../myClasses/student';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   //js go here
-  sname = "Mai Pham";
+  // sname = "Mai Pham";
+
+  @Input() student!: Student;
 }
