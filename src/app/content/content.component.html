@@ -24,5 +24,14 @@
 
         <button (click) = "clearCity()" [disabled] = "city === ''">Reset</button>
         <!-- is city is empty, disable the button -->
+        <hr>
+
+        <p *ngIf="(city) === 'Brampton' || (city) === 'Oakville'; else noCampus ">
+            This city has a Sheridan campus
+        </p>
+
+        <ng-template #noCampus>
+            <p>No Campus</p>
+        </ng-template>
     </div>
   </section>
