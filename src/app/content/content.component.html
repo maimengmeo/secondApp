@@ -20,5 +20,9 @@
             <input [(ngModel)] = "city" autofocus> 
             <!-- label will change follow up the input text box -->
         </label>
+        <hr>
+
+        <button (click) = "clearCity()" [disabled] = "city === ''">Reset</button>
+        <!-- is city is empty, disable the button -->
     </div>
   </section>

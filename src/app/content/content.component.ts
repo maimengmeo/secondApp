@@ -11,4 +11,8 @@ export class ContentComponent {
 
   city = "Brampton"; //bind this to input box
 
+  clearCity() { //no function keyword in angular
+    this.city = ""
+  }
+
 }
