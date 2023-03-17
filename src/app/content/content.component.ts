@@ -8,4 +8,7 @@ import {Student} from '../myClasses/student';
 })
 export class ContentComponent {
   @Input() student!: Student;
+
+  city = "Brampton"; //bind this to input box
+
 }
