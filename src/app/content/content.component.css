@@ -9,3 +9,10 @@
     .imgArea {grid-area: imgArea; text-align: center;}
     .listArea {grid-area: listArea;}
     .inputArea {grid-area: inputArea;}
+
+    .oak {
+        color: yellow;
+    }
+    .bramp {
+        color: lightblue;
+    }

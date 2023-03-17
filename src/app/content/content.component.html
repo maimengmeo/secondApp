@@ -14,8 +14,6 @@
     </div>
     <div class="inputArea common">
       <h3>2-way Binding</h3>
-        
-        <p ></p>
 
         <p [ngStyle] = "{color: 'red'}">City: {{city}}</p>
 
@@ -29,7 +27,10 @@
         <!-- is city is empty, disable the button -->
         <hr>
 
-        <p *ngIf="(city|lowercase) === 'brampton' || (city|lowercase) === 'oakville'; else noCampus " [ngStyle] = "{backgroundColor: backCampus()}">
+        <p *ngIf="(city|lowercase) === 'brampton' || (city|lowercase) === 'oakville'; else noCampus " 
+            [ngStyle] = "{backgroundColor: backCampus()}"
+            [ngClass] = "{oak: (city | lowercase) === 'oakville', 
+                            bramp: (city | lowercase) === 'brampton'}">
             This city has a Sheridan campus
         </p>
 
