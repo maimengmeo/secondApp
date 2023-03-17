@@ -35,7 +35,7 @@
         </p>
 
         <ng-template #noCampus>
-            <p>No Campus</p>
+            <p [ngClass] = "{neither: (city | lowercase) != 'brampton'}">No Campus</p>
         </ng-template>
     </div>
   </section>
